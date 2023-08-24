@@ -27,3 +27,7 @@ MonoBehaviour:
     Pads: 8
   - Duration: 500
     Pads: 2
+  - Duration: 1000
+    Pads: 3
+  - Duration: 1000
+    Pads: 12

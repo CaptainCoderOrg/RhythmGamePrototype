@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c383a459c349024428861782d2e7fa8e, type: 3}
+  m_Name: ArrowDatabase
+  m_EditorClassIdentifier: 
+  Template: {fileID: 706874431470325829, guid: e57594a47694c354880a106cec2d2947, type: 3}
+  LeftArrow: {fileID: -1076659197, guid: c44e40259ec0dbb4a909f0aaa08acd1b, type: 3}
+  LeftArrowHalfBeat: {fileID: 1584969252, guid: c44e40259ec0dbb4a909f0aaa08acd1b, type: 3}
+  LeftArrowQuarterBeat: {fileID: 1885241713, guid: c44e40259ec0dbb4a909f0aaa08acd1b, type: 3}
+  DownArrow: {fileID: -812902105, guid: c44e40259ec0dbb4a909f0aaa08acd1b, type: 3}
+  DownArrowHalfBeat: {fileID: 1599240221, guid: c44e40259ec0dbb4a909f0aaa08acd1b, type: 3}
+  DownArrowQuarterBeat: {fileID: 188666331, guid: c44e40259ec0dbb4a909f0aaa08acd1b, type: 3}
+  UpArrow: {fileID: 74519955, guid: c44e40259ec0dbb4a909f0aaa08acd1b, type: 3}
+  UpArrowHalfBeat: {fileID: 1338476795, guid: c44e40259ec0dbb4a909f0aaa08acd1b, type: 3}
+  UpArrowQuarterBeat: {fileID: -2073417543, guid: c44e40259ec0dbb4a909f0aaa08acd1b, type: 3}
+  RightArrow: {fileID: -2044146604, guid: c44e40259ec0dbb4a909f0aaa08acd1b, type: 3}
+  RightArrowHalfBeat: {fileID: -995968446, guid: c44e40259ec0dbb4a909f0aaa08acd1b, type: 3}
+  RightArrowQuarterBeat: {fileID: 1458978796, guid: c44e40259ec0dbb4a909f0aaa08acd1b, type: 3}

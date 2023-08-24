@@ -54,7 +54,7 @@ public class ArrowTracks : MonoBehaviour
         float cursorInPixels = _beatCursor / 1000f;
         if (toAdd.HasFlag(toCheck))
         {
-            GameObject arrow = Instantiate(Database.Load(_beatCursor, toCheck), parent);
+            GameObject arrow = Database.Instantiate(_beatCursor, toCheck, parent);
             RectTransform rectTransform = arrow.GetComponent<RectTransform>();
             Vector3 newPosition = rectTransform.localPosition;
             newPosition.y = -200 * cursorInPixels;
