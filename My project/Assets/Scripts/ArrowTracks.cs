@@ -42,21 +42,23 @@ public class ArrowTracks : MonoBehaviour
 
     private void AddPads(Pad toAdd)
     {
-        if (toAdd.HasFlag(Pad.Left))
+        float cursorInPixels = _beatCursor / 1000f;
+        SetPadPosition(toAdd, Pad.Left, LeftTrack.transform);
+        SetPadPosition(toAdd, Pad.Down, DownTrack.transform);
+        SetPadPosition(toAdd, Pad.Up, UpTrack.transform);
+        SetPadPosition(toAdd, Pad.Right, RightTrack.transform);
+    }
+
+    private void SetPadPosition(Pad toAdd, Pad toCheck, Transform parent)
+    {
+        float cursorInPixels = _beatCursor / 1000f;
+        if (toAdd.HasFlag(toCheck))
         {
-            GameObject arrow = Instantiate(Database.Load(_beatCursor, Pad.Left), LeftTrack.transform);
-        }
-        if (toAdd.HasFlag(Pad.Down))
-        {
-            GameObject arrow = Instantiate(Database.Load(_beatCursor, Pad.Down), DownTrack.transform);
-        }
-        if (toAdd.HasFlag(Pad.Up))
-        {
-            GameObject arrow = Instantiate(Database.Load(_beatCursor, Pad.Up), UpTrack.transform);
-        }
-        if (toAdd.HasFlag(Pad.Right))
-        {
-            GameObject arrow = Instantiate(Database.Load(_beatCursor, Pad.Right), RightTrack.transform);
+            GameObject arrow = Instantiate(Database.Load(_beatCursor, toCheck), parent);
+            RectTransform rectTransform = arrow.GetComponent<RectTransform>();
+            Vector3 newPosition = rectTransform.localPosition;
+            newPosition.y = -200 * cursorInPixels;
+            rectTransform.localPosition = newPosition;
         }
     }
 }

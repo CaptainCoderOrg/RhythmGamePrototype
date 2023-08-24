@@ -835,6 +835,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1941372889207474376, guid: 3dd4a7cbe1eb6214ab1261d2d2208f0e, type: 3}
+      propertyPath: <Database>k__BackingField
+      value: 
+      objectReference: {fileID: 11400000, guid: 98d5fca5382357d45b2786bc2ce75b30, type: 2}
+    - target: {fileID: 3212624760864294674, guid: 3dd4a7cbe1eb6214ab1261d2d2208f0e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -400
+      objectReference: {fileID: 0}
     - target: {fileID: 4548814205075040269, guid: 3dd4a7cbe1eb6214ab1261d2d2208f0e, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
